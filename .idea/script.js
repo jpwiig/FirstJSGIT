@@ -19,10 +19,13 @@ function nedtelling(){
       if (sec!=0){
          sec--;
       }
-     else if(sec==0){
+     if(sec==0){
          min--;
       }
-    else if(min==0){
+      if(min!=0){
+         min--;
+      }
+    if(min==0){
          t--;
       }
 
