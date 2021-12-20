@@ -8,7 +8,7 @@ function tid(){
    klokkefin.textContent = H + "-" + M + "-" + S;
 }
 setInterval(tid, 500);
-var span =document.getElementById('nedtellin');
+var span =document.getElementById('nedtelling');
 function nedtelling(){
    //løkke med t, m ,s
    var t = 10;
@@ -30,6 +30,6 @@ function nedtelling(){
 
    }
 
-   nedtellin.textContent = ("0"+t).substr(-2) + ("0"+m).substr(-2) + ("0"+s).substr(-2);
+   nedtelling.textContent = t+"-"+min+"-"+sec;
 }
 

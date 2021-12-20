@@ -13,11 +13,15 @@ p{
     font-family:sans-serif;
 }
 #klokkefin{
-    font-size: 13rem;
+    font-size: 6rem;
     font-family: "Montserrat SemiBold";
     align-content: center;
 }
-#nedtellin{
-    font-size: 13rem;
+
+#klokkefin:hover{
+    color: white;
+}
+#nedtelling{
+    font-size: 6rem;
     font-family: "Montserrat SemiBold";
 }
