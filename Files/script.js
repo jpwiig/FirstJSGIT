@@ -1,5 +1,5 @@
 
-var span=document.getElementById('klokkefin');
+document.getElementById('klokkefin');
 function tid(){
    var tid= new Date();
    var H=tid.getHours();
@@ -8,28 +8,24 @@ function tid(){
    klokkefin.textContent = H + "-" + M + "-" + S;
 }
 setInterval(tid, 500);
-var span =document.getElementById('nedtelling');
+
+document.getElementById('tellNed');
 function nedtelling(){
    //løkke med t, m ,s
-   var t = 10;
-   var min= 59;
-   var sec= 59;
-   while(t>0){
-      if (sec!=0){
+   var tiden= new Date;
+   var t = 12;
+   var min=59;
+   int  sec=30;
+   while(t>=0){
          sec--;
-      }
      if(sec==0){
-         min--;
-      }
-      if(min!=0){
          min--;
       }
     if(min==0){
          t--;
       }
-
    }
-
-   nedtelling.textContent = t+"-"+min+"-"+sec;
+   tellNed.textContent = t+"-"+min+"-"+sec;
 }
+
 
