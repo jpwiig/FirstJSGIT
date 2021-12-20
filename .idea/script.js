@@ -5,10 +5,9 @@ function tid(){
    var H=tid.getHours();
    var M=tid.getMinutes();
    var S=tid.getSeconds();
-   klokkefin.textContent = ("0"+H).substr(-2)+ ":" + ("0"+M).substr(-2)+ ":" + ("0"+S).substr(-2);
+   klokkefin.textContent = H + "-" + M + "-" + S;
 }
 setInterval(tid, 500);
-
 var span =document.getElementById('nedtellin');
 function nedtelling(){
    //løkke med t, m ,s
@@ -33,4 +32,4 @@ function nedtelling(){
 
    nedtellin.textContent = ("0"+t).substr(-2) + ("0"+m).substr(-2) + ("0"+s).substr(-2);
 }
-setInterval(nedtelling, 1000);
+
