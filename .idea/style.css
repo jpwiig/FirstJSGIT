@@ -1,0 +1,23 @@
+*{
+   background-color: gray;
+    font-family: Serif;
+}
+button{
+    background-color: white;
+}
+h1:hover{
+    color: red;
+
+}
+p{
+    font-family:sans-serif;
+}
+#klokkefin{
+    font-size: 13rem;
+    font-family: "Montserrat SemiBold";
+    align-content: center;
+}
+#nedtellin{
+    font-size: 13rem;
+    font-family: "Montserrat SemiBold";
+}
