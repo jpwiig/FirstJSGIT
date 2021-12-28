@@ -16,10 +16,8 @@ function nedtelling(){
    let t = 12;
    let min=59;
    let sec=30;
-   while(t<=0 && min!=0 && sec!=0){
-      if(sec!=0){
-         sec--;
-      }
+   while(t<0){
+
      if(sec==0){
          min--;
          sec=59;
