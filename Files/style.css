@@ -1,6 +1,8 @@
 *{
    background-color: gray;
     font-family: Serif;
+    flex-wrap: wrap;
+    align-content: center;
 }
 button{
     background-color: white;
@@ -21,7 +23,8 @@ p{
 #klokkefin:hover{
     color: white;
 }
-#nedtelling{
+#tellNed{
     font-size: 6rem;
     font-family: "Montserrat SemiBold";
+    align-content: center;
 }

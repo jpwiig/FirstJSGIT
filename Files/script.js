@@ -1,10 +1,10 @@
 
 document.getElementById('klokkefin');
 function tid(){
-   var tid= new Date();
-   var H=tid.getHours();
-   var M=tid.getMinutes();
-   var S=tid.getSeconds();
+   const tid= new Date();
+   const H=tid.getHours();
+   const M=tid.getMinutes();
+   const S=tid.getSeconds();
    klokkefin.textContent = H + "-" + M + "-" + S;
 }
 setInterval(tid, 500);
@@ -12,20 +12,25 @@ setInterval(tid, 500);
 document.getElementById('tellNed');
 function nedtelling(){
    //løkke med t, m ,s
-   var tiden= new Date;
-   var t = 12;
-   var min=59;
-   int  sec=30;
-   while(t>=0){
+   let tiden= new Date();
+   let t = 12;
+   let min=59;
+   let sec=30;
+   while(t<=0 && min!=0 && sec!=0){
+      if(sec!=0){
          sec--;
+      }
      if(sec==0){
          min--;
+         sec=59;
       }
     if(min==0){
          t--;
+         min=59; 
       }
    }
    tellNed.textContent = t+"-"+min+"-"+sec;
 }
+setInterval(nedtelling, 1000);
 
 
