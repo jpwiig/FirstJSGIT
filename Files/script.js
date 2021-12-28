@@ -13,11 +13,11 @@ document.getElementById('tellNed');
 function nedtelling(){
    //løkke med t, m ,s
    let tiden= new Date();
-   let t = 12;
+   let t = 0;
    let min=59;
    let sec=30;
-   while(t<0){
-
+   while(t<=0){
+    sec--;
      if(sec==0){
          min--;
          sec=59;
